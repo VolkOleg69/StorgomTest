@@ -1,0 +1,131 @@
+{
+  "id": "8eda8df4-b03b-4032-b20c-4cff31390577",
+  "version": "2.0",
+  "name": "Storgom",
+  "url": "https://storgom.ua/ua/",
+  "tests": [{
+    "id": "479b81b0-3578-4d49-b577-0cca4a5709be",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "34a3caa8-03a1-4806-9c4e-a14290d3ac1c",
+    "name": "Storgom test1",
+    "commands": [{
+      "id": "3d1505af-bae5-4fab-bb6e-1980e99c6d10",
+      "comment": "",
+      "command": "open",
+      "target": "https://storgom.ua/ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b2ace10-bbbb-48ef-88d0-84f6c5922d95",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1512x945",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5efa7291-e4c0-4f5f-9a4a-12bac81b1269",
+      "comment": "",
+      "command": "click",
+      "target": "id=jsload-uid-5",
+      "targets": [
+        ["id=jsload-uid-5", "id"],
+        ["linkText=українська", "linkText"],
+        ["css=#jsload-uid-5", "css:finder"],
+        ["xpath=//a[contains(text(),'українська')]", "xpath:link"],
+        ["xpath=//a[@id='jsload-uid-5']", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'українська')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7daa9764-491e-4bee-8ae6-d798417c2fff",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Генератори",
+      "targets": [
+        ["linkText=Генератори", "linkText"],
+        ["css=.active > .ml_ga4", "css:finder"],
+        ["xpath=//div[@id='catalog-menu']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ua/generatory-i-elektrostantsii.html')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Генератори')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3168af1a-9c81-493e-8cec-b9c0dcaacd07",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sidebar-filter:nth-child(5) li:nth-child(2) .check",
+      "targets": [
+        ["css=.sidebar-filter:nth-child(5) li:nth-child(2) .check", "css:finder"],
+        ["xpath=//div[@id='sidebar-filter']/div/div[2]/form/div[5]/div[2]/ul/li[2]/label/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/ul/li[2]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c369623a-c519-4c28-8b7c-208317c6792c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sidebar-filter:nth-child(8) li:nth-child(4) .check",
+      "targets": [
+        ["css=.sidebar-filter:nth-child(8) li:nth-child(4) .check", "css:finder"],
+        ["xpath=//div[@id='sidebar-filter']/div/div[2]/form/div[8]/div[2]/ul/li[4]/label/span", "xpath:idRelative"],
+        ["xpath=//div[8]/div[2]/ul/li[4]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58c6d619-b9f7-4d3f-9dce-6531d9c1bbc4",
+      "comment": "",
+      "command": "click",
+      "target": "id=jsload-uid-68",
+      "targets": [
+        ["id=jsload-uid-68", "id"],
+        ["css=#jsload-uid-68", "css:finder"],
+        ["xpath=//img[@alt='Дизельний генератор Konner&Sohnen KS 33-3XM']", "xpath:img"],
+        ["xpath=//img[@id='jsload-uid-68']", "xpath:attributes"],
+        ["xpath=//div[@id='catalog_content']/div[11]/div/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//div[11]/div/div[2]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47494e9c-f5d7-46f7-8c63-e01bc6e535a8",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,360)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73468dc8-4585-49b4-92f8-ae6d1aa93e69",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='product-page-title']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Дизельний генератор Konner&Sohnen KS 33-3XM')]", "xpath:innerText"]
+      ],
+      "value": "Дизельний генератор Konner&Sohnen KS 33-3XM"
+    }, {
+      "id": "88c7ab7f-eb84-4a3c-948c-034cfd964b0a",
+      "comment": "",
+      "command": "click",
+      "target": "id=jsload-uid-27",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c7b7a562-36f5-41d9-9195-2a95efb5d4ae",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["479b81b0-3578-4d49-b577-0cca4a5709be"]
+  }],
+  "urls": ["https://storgom.ua/ua/"],
+  "plugins": []
+}
